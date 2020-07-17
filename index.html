@@ -9,9 +9,8 @@
   <meta name="description" content="Beetle">
   <meta name="author" content="SitePoint">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
     rel="stylesheet">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 
@@ -20,182 +19,275 @@
 <body>
 
   <header class="header">
-    <div class="header__title">Beetle</div>
-    <nav class="nav">
-      <ul class="nav__items">
-        <li class="nav__item"><a href="#">Home</a></li>
-        <li class="nav__item"><a href="#">Portfolio</a></li>
-        <li class="nav__item"><a href="#">Blog</a></li>
-        <li class="nav__item"><a href="#">Resume</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <div class="header__title">Beetle</div>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li><a href="#" class="nav__item">Home</a></li>
+          <li><a href="#" class="nav__item">Portfolio</a></li>
+          <li><a href="#" class="nav__item">Blog</a></li>
+          <li><a href="#" class="nav__item">Resume</a></li>
+          <li><a href="#" class="nav__item">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="main">
-
     <div class="title">
-      <h1 class="title__title">Designer and maker</h1>
-      <span class="title__description">Building new products at spotify nyc .mail app</span>
-      <a class="title__arrow" href="#"></a>
+      <div class="wrapper">
+        <h1 class="title__title">Designer and maker</h1>
+        <span class="title__description">Building new products at spotify nyc .mail app</span>
+        <a class="title__arrow" href="#">&darr;</a>
+      </div>
     </div>
 
     <div class="slider slider-responsibilities">
-      <div class="slide">
-        <div class="slide__image">
-          <img src="images/slide_1.png" alt="UI\UX image">
-        </div>
-        <div class="slide__description">
-          <h2 class="slide__title">I create simple interfaces for humans and enjoy pixel-prefection</h2>
-          <p class="slide__text">
-            I'm an experienced and passionate user interface designer with interaction design background
-          </p>
+      <div class="wrapper">
+        <div class="slide slide1">
+          <div class="slide__image">
+            <div class="slide1__rect slide1__ui">
+              <span>UI</span>
+            </div>
+            <div class="slide1__rect slide1__ux">
+              <span>UX</span>
+            </div>
+          </div>
+          <div class="slide__description">
+            <h2 class="slide__title">I create simple interfaces for humans and enjoy pixel-prefection</h2>
+            <p class="slide__text">
+              I'm an experienced and passionate user interface designer with interaction design background
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="portfolio">
-      <h2 class="portfolio__title">Portfolio</h2>
-      <div class="portfolio__item-big"></div>
-      <div class="portfolio__item-1"></div>
-      <div class="portfolio__item-2"></div>
-      <div class="portfolio__item-3"></div>
-      <div class="portfolio__item-4"></div>
-      <div class="portfolio__item-5"></div>
-      <div class="portfolio__item-6"></div>
-      <div class="portfolio__item-7"></div>
-      <div class="portfolio__item-8"></div>
-      <a class="portfolio__browse" href="#">Browse portfolio</a>
+      <div class="wrapper">
+        <h2 class="portfolio__title">PORTFOLIO</h2>
+        <div class="portfolio-grid-container">
+          <div class="portfolio__item-1"></div>
+          <div class="portfolio__item-big"></div>
+          <div class="portfolio__item-2"></div>
+          <div class="portfolio__item-3"></div>
+          <div class="portfolio__item-4"></div>
+          <div class="portfolio__item-5"></div>
+          <div class="portfolio__item-6"></div>
+          <div class="portfolio__item-7"></div>
+          <div class="portfolio__item-8"></div>
+        </div>
+        <a class="portfolio__browse" href="#">Browse portfolio</a>
+      </div>
     </div>
 
     <div class="skills">
-      <h2 class="skills__title">Skills</h2>
-      <p class="skills__description">
-        I'm an experienced and passionate user interface designer with interaction design background.
-        My goal is make the world wide web a better place by designing beautiful user experiences,
-        one site at a time.
-      </p>
-      <div class="skills__visualize">
-        <div class="skills__UI">
-          <h2>85%</h2>
-          <span>User Interface</span>
-        </div>
-        <div class="skills__frontend">
-          <h2>85%</h2>
-          <span>Front-end</span>
-        </div>
-        <div class="skills__UX">
-          <h2>70%</h2>
-          <span>User Experience</span>
-        </div>
-        <div class="skills__icons">
-          <h2>70%</h2>
-          <span>Icon design</span>
+      <div class="wrapper">
+        <h2 class="skills__title">SKILLS</h2>
+        <p class="skills__description">
+          I'm an experienced and passionate user interface designer with interaction design background.
+          My goal is make the world wide web a better place by designing beautiful user experiences,
+          one site at a time.
+        </p>
+        <div class="skills__visualize">
+          <div class="skills__UI">
+            <h2>85%</h2>
+            <span>User Interface</span>
+          </div>
+          <div class="skills__frontend">
+            <h2>85%</h2>
+            <span>Front-end</span>
+          </div>
+          <div class="skills__UX">
+            <h2>70%</h2>
+            <span>User Experience</span>
+          </div>
+          <div class="skills__icons">
+            <h2>70%</h2>
+            <span>Icon design</span>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="work">
-      <div class="work__content">
-        <h2 class="work__title">Work experience</h2>
-        <p class="work__description">
-          Specialities: User experience design, user interface design, brand identity,
-          typography, print and packaging design, web starcards, grid based layout.
-        </p>
-        <a href="#" class="btn">View on Linkedin</a>
-      </div>
-      <div class="work__timeline"></div>
-      <div class="work__companies">
-        <div class="work__item">
-          <img class="work__image" alt="Facebook">
-          <div class="work__item-description">
-            <h3>Facebook</h3>
-            <span>UI/UX Designer</span>
-            <p>
-              October 2013 - November 2013(2 months)Menlo Park, CA, United States of America
-            </p>
-          </div>
+      <div class="wrapper work__wrapper">
+        <div class="work__content">
+          <h2 class="work__title">Work experience</h2>
+          <p class="work__description">
+            Specialities: User experience design, user interface design, brand identity,
+            typography, print and packaging design, web starcards, grid based layout.
+          </p>
+          <a href="#" class="btn">View on Linkedin</a>
         </div>
-        <div class="work__item">
-          <img class="work__image" alt="Amazon">
-          <div class="work__item-description">
-            <h3>Amazon</h3>
-            <span>UI/UX Designer</span>
-            <p>
-              October 2013 - November 2013(2 months)Menlo Park, CA, United States of America
-            </p>
+        <div class="work__timeline"></div>
+        <div class="work__companies">
+          <div class="work__date"><span>2013</span></div>
+          <div class="work__item">
+            <img class="work__image" alt="Facebook" src="images/fb-logo.png" width="61px" height="61px">
+            <div class="work__item-description">
+              <h3>Facebook</h3>
+              <span>UI/UX Designer</span>
+              <p>
+                October 2013 - November 2013(2 months)Menlo Park, CA, United States of America
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="work__item">
-          <img class="work__image" alt="Apple">
-          <div class="work__item-description">
-            <h3>Apple</h3>
-            <span>UI/UX Designer</span>
-            <p>
-              October 2013 - November 2013(2 months)Menlo Park, CA, United States of America
-            </p>
+          <div class="work__item">
+            <img class="work__image" alt="Amazon" src="images/amazon-logo.png" width="61px" height="61px">
+            <div class="work__item-description">
+              <h3>Amazon</h3>
+              <span>UI/UX Designer</span>
+              <p>
+                October 2013 - November 2013(2 months)Menlo Park, CA, United States of America
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="work__item">
-          <img class="work__image" alt="IBM">
-          <div class="work__item-description">
-            <h3>IBM</h3>
-            <span>UI/UX Designer</span>
-            <p>
-              October 2013 - November 2013(2 months)Menlo Park, CA, United States of America
-            </p>
+          <div class="work__date"><span>2012</span></div>
+          <div class="work__item">
+            <img class="work__image" alt="Apple" src="images/apple-logo.png" width="61px" height="61px">
+            <div class="work__item-description">
+              <h3>Apple</h3>
+              <span>UI/UX Designer</span>
+              <p>
+                October 2013 - November 2013(2 months)Menlo Park, CA, United States of America
+              </p>
+            </div>
           </div>
+          <div class="work__item">
+            <img class="work__image" alt="IBM" src="images/ibm-logo.png" width="61px" height="61px">
+            <div class="work__item-description">
+              <h3>IBM</h3>
+              <span>UI/UX Designer</span>
+              <p>
+                October 2013 - November 2013(2 months)Menlo Park, CA, United States of America
+              </p>
+            </div>
+          </div>
+          <div class="work__date"><span>2008</span></div>
         </div>
       </div>
     </div>
 
-    <div class="slider slider__citations">
-      <div class="slide">
-        <p class="slide__citation">
-          "It's a long established fact that a reader will be distracted by the readable content of a
-          page when looking at its layout"
-        </p>
-        <span class="slide__author">Frank Rapacciuolo</span>
+    <div class="slider slider-citations">
+      <div class="wrapper">
+        <div class="slide">
+          <p class="slide__citation">
+            "It's a long established fact that a reader will be distracted by the readable content of a
+            page when looking at its layout"
+          </p>
+          <span class="slide__author">-Frank Rapacciuolo-</span>
+        </div>
       </div>
     </div>
 
     <div class="contact">
-      <h2 class="contact__title">Contact</h2>
-      <div class="contact__content">
-        <form class="contact__form">
-          <input type="text" class="contact__input contact__name" placeholder="Full name" />
-          <input type="text" class="contact__input contact__email" placeholder="Email address" />
-          <select class="contact__budget">
-            <option>100$</option>
-            <option>200$</option>
-            <option>300$</option>
-          </select>
-          <select class="contact__timeline">
-            <option>1 month</option>
-            <option>2 month</option>
-            <option>3 month</option>
-          </select>
-          <textarea class="contact__about" placeholder="Tell me about project briefly" rows="8">
-          </textarea>
-        </form>
-        <div class="contact__links">
-
+      <div class="wrapper">
+        <h2 class="contact__title">CONTACT</h2>
+        <div class="contact__content">
+          <form class="contact__form">
+            <input type="text" class="contact__input contact__name" placeholder="Full name" />
+            <input type="text" class="contact__input contact__email" placeholder="Email address" />
+            <select class="contact__budget">
+              <option>100$</option>
+              <option>200$</option>
+              <option>300$</option>
+            </select>
+            <select class="contact__timeline">
+              <option>1 month</option>
+              <option>2 month</option>
+              <option>3 month</option>
+            </select>
+            <textarea class="contact__about" placeholder="Tell me about project briefly" rows="8"></textarea>
+            <button class="contact__send" type="button">SEND</button>
+          </form>
+          <div class="contact__links">
+            <div class="contact__location">
+              <h2 class="contact__links-title">LOCATION</h2>
+              <p>
+                13, 2 Elizabet ST,
+                Melbourne, Victoria 3000,
+                Australia
+              </p>
+            </div>
+            <div class="contact__social">
+              <h2 class="contact__links-title">I AM SOCIAL</h2>
+              <div class="social contact-fb">
+                <a href="#">
+                  <img src="images/facebook-social.png" alt="Social facebook button">
+                  <span>Facebook</span>
+                </a>
+              </div>
+              <div class="social contact-twitter">
+                <a href="#">
+                  <img src="images/twitter-social.png" alt="Social twitter button">
+                  <span>Twitter</span>
+                </a>
+              </div>
+              <div class="social contact-linkedin">
+                <a href="#">
+                  <img src="images/linkedin-social.png" alt="Social linkedin button">
+                  <span>Linkedin</span>
+                </a>
+              </div>
+              <div class="social contact-google">
+                <a href="#">
+                  <img src="images/google-social.png" alt="Social google+ button">
+                  <span>Google+</span>
+                </a>
+              </div>
+              <div class="social contact-rss">
+                <a href="#">
+                  <img src="images/rss-social.png" alt="Social rss button">
+                  <span>RSS</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="map">
-      <div class="map__point"></div>
-      <div class="map__badge">
-        <span class="map__based">I'm based in</span>
-        <span class="map__location">Milan, Italy</span>
+      <div class="wrapper">
+        <div class="map__point"></div>
+        <div class="map__badge">
+          <span class="map__based">I'm based in</span>
+          <span class="map__location">Milan, Italy</span>
+        </div>
       </div>
     </div>
 
   </main>
 
-  <footer>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__menu">
+        <h2>Menu</h2>
+        <nav class="footer-nav">
+          <ul class="footer-nav__items">
+            <li><a href="#" class="footer-nav__item">Home</a></li>
+            <li><a href="#" class="footer-nav__item">Portfolio</a></li>
+            <li><a href="#" class="footer-nav__item">Blog</a></li>
+            <li><a href="#" class="footer-nav__item">Resume</a></li>
+            <li><a href="#" class="footer-nav__item">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-contact">
+        <h2>Contact</h2>
+        <span>Flat 3D Mockup Kit</span>
+      </div>
+      <div class="footer-newsletter">
+        <h2>Newsletter</h2>
 
+      </div>
+      <div class="footer-follow">
+        <h2>Follow Us</h2>
+        <a href="#"><img src="#" alt="Twitter"></a>
+        <a href="#"><img src="#" alt="Facebook"></a>
+      </div>
+    </div>
   </footer>
 
 </body>
