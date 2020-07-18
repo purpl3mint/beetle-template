@@ -656,10 +656,122 @@ h1, h2 {
     left: 20px;
 }
 
-.map {
+.map {  
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 200px;
     background-color: rgb(79, 193, 233);
 }
 
+.map .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.map__point {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.map__point::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    background-color: rgb(231, 76, 60);
+}
+
+.map__badge {
+    position: relative;
+    height: 55px;
+    width: 160px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.map__badge::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+.map__based {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(43, 150, 173);
+}
+
+.map__location {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    color: rgb(43, 150, 173);
+}
+
 .footer {
+    padding-top: 45px;
+    padding-bottom: 45px;
     background-color: rgb(54, 56, 66);
+}
+
+.footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(84, 87, 102);
+}
+
+.footer__item-title {
+    color: white;
+    margin-bottom: 35px;
+}
+
+.footer-nav__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav__item {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(84, 87, 102);
+}
+
+.footer__twitter {
+    margin-right: 20px;
+    content: url("../images/footer-twitter.png");
+}
+
+.footer__twitter:hover {
+    content: url("../images/footer-twitter-hover.png");
+}
+
+.footer__facebook {
+    content: url("../images/footer-facebook.png");
+}
+
+.footer__facebook:hover {
+    content: url("../images/footer-facebook-hover.png");
 }
