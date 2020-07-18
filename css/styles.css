@@ -486,14 +486,114 @@ h1, h2 {
     grid-template-rows: 55px 55px 55px 140px 55px;
     row-gap: 20px;
     column-gap: 15px;
+    position: relative;
+}
+
+.contact__input {
+    color: rgb(153, 153, 153);
+    border-color: rgb(231, 234, 238);
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 50px;
+}
+
+.contact__budget,
+.contact__timeline {
+    position: relative;
+    color: rgb(153, 153, 153);
+    border-color: rgb(231, 234, 238);
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 20px;
+}
+
+.contact__budget-arrow,
+.contact__timeline-arrow {
+    position: absolute;
+    width: 45px;
+    height: 51px;
+    background-color: white;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+.contact__budget-arrow {
+    top: 77px;
+    right: 2px;
+}
+
+.contact__timeline-arrow {
+    top: 152px;
+    right: 2px;
+}
+
+.contact__budget-arrow::before,
+.contact__timeline-arrow::before,
+.contact__budget-arrow::after,
+.contact__timeline-arrow::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    width: 3px;
+    height: 15px;
+    background-color: rgb(205, 205, 205);
+    color: rgb(205, 205, 205);
+}
+
+.contact__budget-arrow::before,
+.contact__timeline-arrow::before {
+    transform: rotate(45deg);
+    right: 20px;
+}
+
+.contact__budget-arrow::after,
+.contact__timeline-arrow::after {
+    transform: rotate(-45deg);
+    right: 29px;
+}
+
+.contact__about {
+    color: rgb(153, 153, 153);
+    border-color: rgb(231, 234, 238);
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.contact__input:hover,
+.contact__budget:hover,
+.contact__timeline:hover {
+    border-color: rgb(202, 209, 217);
+}
+
+.contact__input:active,
+.contact__budget:active,
+.contact__timeline:active {
+    border-color: rgb(136, 211, 255);
+    color: black;
 }
 
 .contact__name {
     grid-area: name;
+    position: relative;
+}
+
+.contact__name-icon {
+    position: absolute;
+    top: 17px;
+    left: 15px;
 }
 
 .contact__email {
     grid-area: addr;
+}
+
+.contact__email-icon {
+    position: absolute;
+    top: 17px;
+    left: 330px;
 }
 
 .contact__budget {
