@@ -45,11 +45,11 @@
   </header>
 
   <main class="main">
-    <div class="slider-responsibilities">
+    <div class="slider-responsibilities slider-wrapper">
       <div class="wrapper">
-        <input type="radio" name="point" id="slide1-resp" checked>
-        <input type="radio" name="point" id="slide2-resp">
-        <input type="radio" name="point" id="slide3-resp">
+        <input type="radio" name="point1" id="slide1-resp" checked>
+        <input type="radio" name="point1" id="slide2-resp">
+        <input type="radio" name="point1" id="slide3-resp">
         <div class="slider">
           <div class="slide slide1">
             <div class="slide__image">
@@ -288,14 +288,36 @@
       </div>
     </div>
 
-    <div class="slider slider-citations">
+    <div class="slider-citations slider-wrapper">
       <div class="wrapper">
-        <div class="slide">
-          <p class="slide__citation">
-            "It's a long established fact that a reader will be distracted by the readable content of a
-            page when looking at its layout"
-          </p>
-          <span class="slide__author">-Frank Rapacciuolo-</span>
+        <input type="radio" name="point2" id="slide1-cite" checked>
+        <input type="radio" name="point2" id="slide2-cite">
+        <input type="radio" name="point2" id="slide3-cite">
+        <div class="slider">
+          <div class="slide slide1">
+            <p class="slide__citation">
+              "It's a long established fact that a reader will be distracted by the readable content of a
+              page when looking at its layout"
+            </p>
+            <span class="slide__author">-Frank Rapacciuolo-</span>
+          </div>
+          <div class="slide slide2">
+            <p class="slide__citation">
+              "Oh, this is a second citation"
+            </p>
+            <span class="slide__author">-Frank Rapacciuolo-</span>
+          </div>
+          <div class="slide slide3">
+            <p class="slide__citation">
+              "Ok, its the last slide on this page"
+            </p>
+            <span class="slide__author">-Frank Rapacciuolo-</span>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <label for="slide1-cite"></label>
+          <label for="slide2-cite"></label>
+          <label for="slide3-cite"></label>
         </div>
       </div>
     </div>

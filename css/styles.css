@@ -161,18 +161,18 @@ h1, h2 {
     background-color: rgb(244, 244, 244);
 }
 
-.slider-responsibilities .wrapper > input {
+.slider-wrapper .wrapper > input {
     display: none;
 }
 
-.slider__controls {
+.slider-responsibilities .slider__controls {
     position: absolute;
     top: 300px;
     left: 50%;
     margin-left: -50px;
 }
 
-.slider-responsibilities label {
+.slider-wrapper label {
     cursor: pointer;
 	display: inline-block;
 	height: 13px;
@@ -183,10 +183,9 @@ h1, h2 {
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
     border-radius: 50%;
-    background-color: rgb(219, 219, 219);
 }
 
-.slider-responsibilities label::after {
+.slider-wrapper label::after {
 	content: " ";
 	display: block;
 	height: 12px;
@@ -200,12 +199,14 @@ h1, h2 {
 	border-radius: 50%;
 }
 
-.wrapper label:hover, 
+.slider-responsibilities label {
+    background-color: rgb(219, 219, 219);
+}
+
+.slider-responsibilities label:hover, 
 #slide1-resp:checked ~ .slider__controls label:nth-of-type(1),
 #slide2-resp:checked ~ .slider__controls label:nth-of-type(2),
-#slide3-resp:checked ~ .slider__controls label:nth-of-type(3),
-#slide4-resp:checked ~ .slider__controls label:nth-of-type(4),
-#slide5-resp:checked ~ .slider__controls label:nth-of-type(5) {
+#slide3-resp:checked ~ .slider__controls label:nth-of-type(3) {
 	background: rgb(170, 170, 170);
 }
 
@@ -226,9 +227,7 @@ h1, h2 {
 
 #slide1-resp:checked ~ .slider > .slide1,
 #slide2-resp:checked ~ .slider > .slide2,
-#slide3-resp:checked ~ .slider > .slide3,
-#slide4-resp:checked ~ .slider > .slide4,
-#slide5-resp:checked ~ .slider > .slide5 {
+#slide3-resp:checked ~ .slider > .slide3{
 	opacity: 1;
 	z-index: 1;
 }
@@ -608,16 +607,47 @@ h1, h2 {
     color: rgb(153, 153, 153);
 }
 
+/***************/
+/*second slider*/
+/***************/
+
 .slider-citations {
+    height: 335px;
     background-color: rgb(255, 96, 95);
     color: white;
     font-style: italic;
+}
+
+.slider-citations .slider__controls {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-left: -50px;
 }
 
 .slider-citations .slide {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.slider-citations label {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.6;
+}
+
+.slider-responsibilities label:hover, 
+#slide1-cite:checked ~ .slider__controls label:nth-of-type(1),
+#slide2-cite:checked ~ .slider__controls label:nth-of-type(2),
+#slide3-cite:checked ~ .slider__controls label:nth-of-type(3) {
+	opacity: 1;
+}
+
+#slide1-cite:checked ~ .slider > .slide1,
+#slide2-cite:checked ~ .slider > .slide2,
+#slide3-cite:checked ~ .slider > .slide3{
+	opacity: 1;
+	z-index: 1;
 }
 
 .slide__citation {
