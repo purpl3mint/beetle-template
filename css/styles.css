@@ -169,24 +169,24 @@ h1, h2 {
     position: absolute;
     top: 300px;
     left: 50%;
-    margin-left: -65px;
+    margin-left: -50px;
 }
 
 .slider-responsibilities label {
     cursor: pointer;
 	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
+	height: 13px;
+	margin: 25px 7px 0 7px;
 	position: relative;
-	width: 8px;
+	width: 13px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
     border-radius: 50%;
+    background-color: rgb(219, 219, 219);
 }
 
 .slider-responsibilities label::after {
-    border: 2px solid #ddd;
 	content: " ";
 	display: block;
 	height: 12px;
@@ -206,7 +206,7 @@ h1, h2 {
 #slide3-resp:checked ~ .slider__controls label:nth-of-type(3),
 #slide4-resp:checked ~ .slider__controls label:nth-of-type(4),
 #slide5-resp:checked ~ .slider__controls label:nth-of-type(5) {
-	background: #ddd;
+	background: rgb(170, 170, 170);
 }
 
 .slide {
