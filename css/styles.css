@@ -154,9 +154,48 @@ h1, h2 {
     left: -5px;
     transform: rotate(-45deg);
 }
+
 /*first slider styling*/
 .slider-responsibilities {
     background-color: rgb(244, 244, 244);
+}
+
+.slider-responsibilities .wrapper > input {
+    display: none;
+}
+
+.slider__controls {
+    left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.slider-responsibilities label {
+    cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.slider-responsibilities label::after {
+    border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
 
 .slide {
@@ -169,6 +208,7 @@ h1, h2 {
 
 .slide__image {
     width: 340px;
+    height: 200px;
 }
 
 .slide1 {
@@ -215,6 +255,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
+/*portfolio styling*/
 .portfolio {
     background-color: rgb(251, 251, 251);
 }
@@ -254,19 +295,67 @@ h1, h2 {
     margin-bottom: 30px;
 }
 
-.portfolio-grid-container > div {
-    border-radius: 25px;
+.portfolio-grid-container div {
+    border-radius: 30px;
 }
 
-.portfolio__item:hover {
-    background-color: rgb(94, 194, 231);
+.portfolio__item {
+    position: relative;
+    background-image: url("../images/add-image-portfolio.svg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    z-index: 1;
+}
+
+.portfolio__item-content {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10%;
+    background-color: rgba(94, 194, 231, 0.6);
+    color: white;
+    z-index: 2;
+}
+
+.portfolio__item-content > .portfolio__item-logo {
+    content: url("../images/portfolio-icon.svg");
+    width: 32px;
+    height: 32px;
+    border-radius: 0;
+    margin-bottom: 5%;
+}
+
+.portfolio__item-name {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.portfolio__item-description {
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.portfolio__item:hover .portfolio__item-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio__item-big {
     grid-area: bi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(244, 244, 244);
 }
-
 
 .portfolio__item-1 {
     grid-area: i1;
@@ -735,10 +824,16 @@ h1, h2 {
     position: relative;
     padding-top: 80px;
     padding-bottom: 200px;
-    background-color: rgb(79, 193, 233);
+    background-color: rgb(56, 188, 236);
+    background-image: url("../images/map-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
 
 .map .wrapper {
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -747,6 +842,7 @@ h1, h2 {
 
 .map__point {
     position: relative;
+    left: 50px;
     width: 50px;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -768,6 +864,7 @@ h1, h2 {
 
 .map__badge {
     position: relative;
+    left: 50px;
     height: 55px;
     width: 160px;
     padding-left: 20px;
